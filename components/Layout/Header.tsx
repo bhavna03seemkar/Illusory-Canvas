@@ -4,21 +4,21 @@ import Navigation from "./Navigation";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { FaBars } from "react-icons/fa";
-import { UserButton, UserProfile } from "@clerk/nextjs";
+import { RxCross1 } from "react-icons/rx";
+import { UserProfile } from "@clerk/nextjs";
 import { User } from "@clerk/nextjs/server";
 import DropDown from "./DropDown";
-import { RxCross1 } from "react-icons/rx";
 
 type Props = {
   activeItem: number;
   user: User | null;
+  isSellerExist: boolean | undefined;
 };
 
-const Header = ({ user, activeItem }: Props) => {
+const Header = ({ user, isSellerExist, activeItem }: Props) => {
   const [active, setactive] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeProfile, setActiveProfile] = useState(false);
-  const [isSellerExist, setIsSellerExist] = useState(false);
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
@@ -50,7 +50,7 @@ const Header = ({ user, activeItem }: Props) => {
         <div>
           <Link href="/">
             <h1 className="font-Inter text-3xl cursor-pointer">
-              <span className="text-[#64ff4c]">Lo</span>go
+              <span className="text-[#64ff4c]">Illusory</span>Canvas
             </h1>
           </Link>
         </div>
@@ -97,7 +97,7 @@ const Header = ({ user, activeItem }: Props) => {
             <h1>
               <Link href={"/"}>
                 <h1 className="font-Inter text-3xl cursor-pointer">
-                  <span className="text-[#64ff4c]">Lo</span>go
+                  <span className="text-[#64ff4c]">Illusory</span>Canvas
                 </h1>
               </Link>
             </h1>
