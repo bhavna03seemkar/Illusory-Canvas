@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
         <div>
           <Link href={"/"}>
             <h1 className="font-Inter text-3xl cursor-pointer">
-              <span className="text-[#64ff4c]">Lo</span>go
+              <span className="text-[#64ff4c]">Illusory</span>Canvas
             </h1>
           </Link>
         </div>

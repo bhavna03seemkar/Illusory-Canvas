@@ -46,9 +46,12 @@ const Hero = (props: Props) => {
     <div className="w-full md:min-h-screen flex items-center justify-center">
       <div>
         <h1 className="font-monserrat text-4xl py-5 xl:text-7xl 2xl:text-8xl font-[700] text-center xl:leading-[80px] 2xl:leading-[100px] sm:mt-20">
-          Make <span className="text-[#64ff4b]">Ai Image</span> <br />
-          With your <br />
-          Imagination
+          Dreamt by AI,
+          <br /> <span className="text-[#64ff4b]">Sold by You</span> <br />
+          Unleash Your <span className="text-[#64ff4b]">
+            Illusory Booth
+          </span>{" "}
+          <br />
         </h1>
         <div className="md:mt-5">
           <Image
